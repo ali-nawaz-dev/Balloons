@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Balloons' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod "Apollo"
+
+  # Pods for Balloons
+
+  target 'BalloonsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BalloonsUITests' do
+    # Pods for testing
+  end
+
+end

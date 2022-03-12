@@ -1,0 +1,31 @@
+# Write your query or mutation here
+
+query BalloonsList ($sort: SortInput = NAME, $filter_variant : Variant = NORMAL ){
+  balloons(sort: $sort, filter: { variant: $filter_variant }) {
+    edges {
+      node {
+        id
+        name
+        imageUrl
+        description
+        color
+        variant
+        price
+        availableSince
+      }
+    }
+  }
+}
+
+query BalloonDetail($id: String = "yellow"){
+  balloon(id: $id){
+    id
+      name
+        imageUrl
+        description
+        color
+        variant
+        price
+        availableSince
+  }
+}
