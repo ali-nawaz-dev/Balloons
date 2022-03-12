@@ -1,6 +1,0 @@
-framework module Pods_Balloons {
-  umbrella header "Pods-Balloons-umbrella.h"
-
-  export *
-  module * { export * }
-}
